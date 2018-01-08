@@ -20,7 +20,7 @@ func (c *LoginController) POST() {
 	if beego.AppConfig.String("uaccount") == uaccount &&
 		beego.AppConfig.String("pwd") == pwd {
 		//		c.TplName = "studentCenter.tpl"
-		c.Redirect("/", 301)
+		c.Redirect("/home", 301)
 	}
 
 	c.Redirect("/login", 301)
